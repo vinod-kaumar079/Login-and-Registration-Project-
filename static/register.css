@@ -1,0 +1,131 @@
+/* Shared hero section for login & register */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+}
+
+/* Glassmorphic card base */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 50px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: #fff;
+  text-align: center;
+}
+
+/* Specific tweaks for register card if needed */
+.register-card {
+  /* Optional: Slightly different shadow or border */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Heading style */
+.glass-card h2.highlight {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #a5d8ff;
+  text-shadow: 0 0 8px #90caf9, 0 0 20px #42a5f5;
+}
+
+/* Subheading below title */
+.subheading {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #cfd8dc;
+  letter-spacing: 0.02em;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input styles */
+.form-container input {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 12px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: #f0f0f0;
+  outline: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 2px 2px 8px rgba(0,0,0,0.25);
+}
+
+.form-container input::placeholder {
+  color: #cfd8dc;
+}
+
+.form-container input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 0 10px #42a5f5,
+    inset 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #42a5f5 0%, #1e88e5 100%);
+  border: none;
+  padding: 15px 0;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 20px rgba(66, 165, 245, 0.6);
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1e88e5 0%, #42a5f5 100%);
+  box-shadow:
+    0 0 20px #90caf9,
+    0 0 40px #42a5f5;
+  transform: translateY(-3px);
+}
+
+/* Message text */
+.msg-text {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #ff6b6b;
+  text-shadow: 0 0 4px #ff6b6baa;
+}
+
+/* Footer text */
+.footer-text {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #cfd8dc;
+}
+
+.footer-text a {
+  color: #42a5f5;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+  color: #90caf9;
+  text-decoration: underline;
+}
