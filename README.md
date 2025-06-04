@@ -93,7 +93,8 @@ Folder Structure
     ├── requirements.txt
     └── README.md
 
-Notes & Improvements
+Notes & Improvements:-
+    
     Security: Currently, passwords are stored in plain text — use password hashing (e.g., bcrypt) for production.
 
     Validation: Enhance validation for stronger password rules.
